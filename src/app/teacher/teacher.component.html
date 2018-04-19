@@ -1,0 +1,10 @@
+<h2>List Of Teachers</h2>
+<ul class="heroes">
+  <li *ngFor="let teacher of teachers">
+    <a routerLink="/teacher-detail/{{teacher.id}}">
+      <span class="badge">{{teacher.id}}</span> {{teacher.name}}
+    </a>
+  </li>
+</ul>
+
+<!-- <app-teacher-detail [teacher]="selectedTeacher"></app-teacher-detail> -->
